@@ -1,14 +1,14 @@
 # Change-GitSignature.ps1
 - version
-    - 0.2
+    - 0.3
 - Synopsis
-    - Function to easily switch between GPG signatures for git
+    - Function to easily switch between GPG signatures and emails for git
 
 ## PARAMETERS 
 |   PARAMATER NAME    |  DESCRIPTION  |
 |   :---:   |   :---    |
-|   personal  |    Switch: Configures git to use your personal GPG key to sign commits  |
-|   work    |   Switch: Configures git to use your work GPG key to sign commits |
+|   personal  |    Switch: Configures git to use your personal GPG key and email to sign commits  |
+|   work    |   Switch: Configures git to use your work GPG key and email to sign commits |
 
 ## NOTES
 Author: @Halldk (Dustin Hall)

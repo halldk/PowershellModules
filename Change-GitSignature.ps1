@@ -1,11 +1,11 @@
 function Change-GitSignature {
     <#
     .Synopsis
-        Function to easily switch between GPG signatures for git
+        Function to easily switch between GPG signatures and emails for git
     .PARAMETER personal
-        Switch: Configures git to use your personal GPG key to sign commits
+        Switch: Configures git to use your personal GPG key and email to sign commits
     .PARAMETER work
-        Switch: Configures git to use your work GPG key to sign commits
+        Switch: Configures git to use your work GPG key and email to sign commits
     .NOTES
         Author: @Halldk (Dustin Hall)
         Uses a CSV file that has the key IDs of your GPG key, with a type either "work" or "personal" used to distinguish them.
@@ -26,10 +26,10 @@ function Change-GitSignature {
     param(
         [Parameter(Mandatory=$true, ParameterSetName="personal", HelpMessage="Switch: Configures git to use your personal or work GPG key to sign commits")]
             [switch]
-            $personal #Switch: Configures git to use your personal GPG key to sign commits
+            $personal #Switch: Configures git to use your personal GPG key and email to sign commits
         ,[Parameter(Mandatory=$true, ParameterSetName="work")]
             [switch]
-            $work #Switch: Configures git to use your work GPG key to sign commits
+            $work #Switch: Configures git to use your work GPG key and email to sign commits
     )
     $csv = Import-CSV "~\.gnupg\key_ids.csv"
     if($personal){
