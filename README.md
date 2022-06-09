@@ -14,8 +14,8 @@ Author: @Halldk (Dustin Hall)
 Uses a CSV file that has the key IDs of your GPG key, with a type either "work" or "personal" used to distinguish them.
 File expected to be in ~\.gnupg\key_ids.csv
 File format: 
-{ type, id, email
-work, fakekeyid1, work@email.com
+{ type, id, email <br >
+work, fakekeyid1, work@email.com <br >
 personal, fakekeyid2, personal@email.com }
 
 
