@@ -1,6 +1,7 @@
 # Change-GitSignature.ps1
 version: 0.2
 | Synopsis | Function to easily switch between GPG signatures for git |
+|   --- |   --- |
 
 ## PARAMETERS 
 |   PARAMATER NAME    |  DESCRIPTION  |
